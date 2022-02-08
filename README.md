@@ -1,16 +1,17 @@
 # API Alerts Script
 
-### Run script
+### Run script using below command. Python 3 is required to run this script. You can download and install Python from here based on your OS: https://www.python.org/downloads/
 ```
 python3 apiAlerts.py -c currency -d 1
 
+where currency = btcusd or ethusd i.e "python3 apiAlerts.py -c btcusd -d 1"
 ```
-### to get help about the script 
+### To get help about the script 
 
 ![image](https://user-images.githubusercontent.com/24311808/153013917-83924ff5-c207-4fd9-8988-f1b0ebf8fcef.png)
 
-### Currently I am hardcoding the values like last_price, average_price, change and sdev if we could get response from some API it would have been better.
-This scripting is using **Python argparse** module to get and store arguments like **currency** and **deviation** once I store the values then I am printing JSON formatted log line that highlights the following fields:
+### This script contains hardcoded values for variables like last_price, average_price, change and sde. If we could get response from any API it could have been a better script. 
+This script is using **Python argparse** module to get and store arguments like **currency** and **deviation** once it stores the values then it is printing JSON formatted log line that highlights the following fields:
 ```
 Timestamp in ISO8601 format (2006-31-10T15:00:00-0500)
 
