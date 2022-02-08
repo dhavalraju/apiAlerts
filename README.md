@@ -2,7 +2,7 @@
 
 ### Run script
 ```
-python apiAlerts.py -c currency -d 1
+python3 apiAlerts.py -c currency -d 1
 
 ```
 ### to get help about the script 
