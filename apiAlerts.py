@@ -10,12 +10,9 @@ print(timestamp.strftime('%Y-%m-%dT%H:%M:%S.%f%z') + '  - AlertingTool - INFO - 
 def usage():
     print("usage: apiAlerts.py [-h] [-c CURRENCY] , [-d DEVIATION]")
 
-
-
 parser = argparse.ArgumentParser(description='Runs checks on API' )
 parser.add_argument('-c', '--currency', help="The currency trading pair, or ALL", required=True, default=None)
 parser.add_argument('-d', '--deviation', help="standard deviation threshold. eg. 1 or 0", required=True, default=None)
-
 
 args = parser.parse_args()
 
@@ -27,13 +24,11 @@ if (deviation) == "0":
     deviation = False
 else:
     deviation = True
-   
 
 timestamp=datetime.now()
 if (len(sys.argv) != 5):
     usage()
     sys.exit()
-
 
 log_output = {}
 log_output["timestamp"] = timestamp.strftime('%Y-%m-%dT%H:%M:%S.%f%z')
@@ -55,10 +50,3 @@ elif (currency) == "ethusd":
 result = json.dumps(OrderedDict(log_output), indent=4)
 
 print(result)
-
-
-
-
-
-
-
