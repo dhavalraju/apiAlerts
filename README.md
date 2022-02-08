@@ -29,6 +29,6 @@ Data: additional data regarding the log, i.e. if there was an upstream ERROR, wh
 
     Deviation: a float object that indicates the deviation from the mean represented in standard devations
 
-     Price change value: a float that object that indicates the deviation as a notional value
+    Price change value: a float that object that indicates the deviation as a notional value
 
 ```
